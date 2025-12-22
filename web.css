@@ -1,0 +1,79 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Style the navigation container */
+.navbar {
+    background-color: #0b2199;
+    /* Dark background for the nav bar */
+    overflow: hidden;
+}
+
+/* Style the list to be horizontal */
+.navbar ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    justify-content: center;
+    /* Center the buttons within the navbar */
+}
+
+/* Style individual list items (the "buttons") */
+.navbar li a {
+    display: block;
+    /* Make the entire link area clickable */
+    color: rgb(182, 255, 249);
+    /* White text color */
+    text-align: center;
+    padding: 14px 20px;
+    /* Padding creates the button size */
+    text-decoration: none;
+    /* Remove default link underlines */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+/* Change background color of links on hover */
+.navbar li a:hover {
+    background-color: #085dfa;
+    /* Slightly lighter gray on hover */
+}
+
+/* Style for an active/current link */
+.navbar li a.active {
+    background-color: #04AA6D;
+    /* Green for the active page, for example */
+}
+body{
+    background-color: rgb(171, 255, 255);
+}
+/* Style individual list items (the "buttons") */
+.navbar li a {
+    display: block;
+    color: rgb(182, 255, 249);
+    text-align: center;
+    padding: 10px 20px;
+    /* Adjusted padding to account for border */
+    text-decoration: none;
+    transition: all 0.3s;
+    /* Transition "all" to include border changes */
+
+    /* ADD THESE LINES */
+    border: 2px solid #b6fff9;
+    /* Creates the box around the button */
+    border-radius: 5px;
+    /* Optional: rounds the corners of the box */
+    margin: 8px 5px;
+    /* Adds space between the boxes */
+}
+
+/* Optional: change the box color on hover */
+.navbar li a:hover {
+    background-color: #085dfa;
+    border-color: white;
+    /* Changes the box color on hover */
+}
